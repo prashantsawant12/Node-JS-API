@@ -19,8 +19,8 @@ app.use(function(req, res, next) {
 const config = require('./config.js');
 const mongoose = require('mongoose');
 
-require('./routes/Product.js')(app);
-require('./routes/User.js')(app);
+require('./routes/product.js')(app);
+require('./routes/user.js')(app);
 
 
 mongoose.Promise = global.Promise;
